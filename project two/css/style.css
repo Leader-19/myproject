@@ -481,3 +481,175 @@ review .review_box .review_card .review_profile {
 .review .review_box .review_card:hover .review_text p {
     margin-top: 5px;
 }
+
+/* order */
+
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(../photo/re\ \(7\).jfif);
+    background-size: cover;
+}
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 55px;
+}
+.order h1 span {
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.order .order-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order .order-main .order-image {
+    width: 600px;
+}
+.order .order-main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+.order .order-main form .input p {
+    line-height: 25px;
+}
+.order .order-main form .input {
+    margin: 5px;
+}
+.order .order-main form .input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    background-color: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+.order .order-main form .input input:focus {
+    border: 2px solid #fac031;
+}
+.order .order-main form .order-btn {
+    padding: 10px 0;
+    background-color: #fac031;
+    color: #fff;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.order .order-main form p {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* team */
+
+.team {
+    width: 100%;
+    height: 90vh;
+    background: wheat;
+}
+.team h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.team h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.team h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team, .team-box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+.team, .team-box, .profie {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.team, .team-box, .profie:hover {
+    border-radius: 20px;
+    height: 320px;
+}
+.team, .team-box, .profie, img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+.team, .team-box, .profie:hover, img {
+    border-radius: 20px;
+    /* margin-top: -3px; */
+}
+.team, .team-box, .profie, .info {
+    /* position: absolute; */
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team, .team-box, .profie:hover, .info {
+    top: 60%;
+}
+.team, .team-box, .profie, .info, .name {
+    color: #fac031;
+    margin-bottom: 15px;
+}
+.team, .team-box, .profie, .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+.team, .team-box, .profie, .info .team-icon {
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.team, .team-box, .profie, .info, .team-icon, i:hover {
+    color: #fac031;
+}
